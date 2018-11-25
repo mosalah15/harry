@@ -1,24 +1,18 @@
-const developers = ["348883739738112004"]
-const adminprefix = "-";
-client.on('message', message => {
-    var argresult = message.content.split(` `).slice(1).join(' ');
-      if (!developers.includes(message.author.id)) return;
-      
-  if (message.content.startsWith(adminprefix + 'ply')) {
-    client.user.setGame(argresult);
-      message.channel.send(`**Status You   ${argresult}**`)
-  } else 
-  if (message.content.startsWith(adminprefix + 'wat')) {
-  client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`**Status You   ${argresult}**`)
-  } else 
-  if (message.content.startsWith(adminprefix + 'lis')) {
-  client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`**Status You  ${argresult}**`)
-  } else 
-  if (message.content.startsWith(adminprefix + 'sets')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/M3roof");
-      message.channel.send(`**Status You ${argresult} **`)
-}
-});
+const Discord = require('discord.js');
+const client = new Discord.Client();
+console.log("Welcome Again !");
+ 
+
+          const devs = ['200644160179535872' , '441293862015729674' , '' , ''];
+          const adminprefix = "-";
+          client.on('message', message => {
+              var argresult = message.content.split(`).slice(1).join(' ');
+                if (!devs.includes(message.author.id)) return;
+
+            if (message.content.startsWith(adminprefix + 'st')) {
+              client.user.setGame(argresult, "https://www.twitch.tv/ حب بلا حدود");
+                message.channel.sendMessage(✅   ${argresult}`)
+            }
+            });
+
 client.login(process.env.BOT_TOKEN);
