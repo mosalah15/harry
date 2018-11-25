@@ -21,3 +21,4 @@ client.on('message', message => {
       message.channel.send(`**Status You ${argresult} **`)
 }
 });
+client.login(process.env.BOT_TOKEN);
